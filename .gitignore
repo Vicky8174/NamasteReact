@@ -1,5 +1,2 @@
-node_modules/
-.parcel-cache/
-dist/
-.env
-*.log
+node_modules
+.parcel-cache
