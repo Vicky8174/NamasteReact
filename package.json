@@ -1,0 +1,24 @@
+{
+  "name": "namastereact",
+  "version": "1.0.0",
+  "description": "namaste react",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.hrml"
+  },
+  "author": "Vicky jha",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.13.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "dom": "^0.0.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router": "^6.15.0",
+    "react-router-dom": "^6.15.0"
+  }
+}

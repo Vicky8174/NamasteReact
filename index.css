@@ -1,0 +1,259 @@
+.menu {
+    display: flex; /* Enable Flexbox */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Place the logo on the left and menu items on the right */
+    padding: 30px; /* Optional: Add padding inside the container */
+    margin-right: 20px;
+    background-color: white; /* Optional: Set a background color */
+}
+
+.logo {
+    flex: 0; /* Prevent the logo from stretching */
+}
+
+.res-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Maintain the logo's aspect ratio */
+}
+
+.menu-list {
+    display: flex; /* Arrange list items horizontally */
+    gap: 20px; /* Add space between list items */
+    list-style: none; /* Remove default list styling */
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+    
+    
+}
+
+.menu-list li {
+    cursor: pointer; /* Optional: Make the list items look clickable */
+    font-size: larger;
+    
+    
+    
+}
+
+.card:hover{
+    border: 1px solid black;
+}
+
+
+
+.content{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.restaurant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    
+
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    background: #fff;
+    cursor: pointer;
+    color: black;
+    height: 380px; 
+    
+}
+h1{
+
+    text-decoration: none ;
+   
+}
+
+
+
+.card-logo {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.shimmer-card{
+    
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.shimmer-container{
+    gap: 20px;
+    padding: 20px;
+    display:flex;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* This sets up a responsive grid layout:
+    - Columns are automatically added to fill the available space (auto-fill).
+    - Each column will be at least 250px wide but can expand to share remaining space equally (minmax).
+    - The layout adapts dynamically to different screen sizes. */
+    
+}
+.login-btn{
+    padding: 0px 20px ;
+    text-align: center;
+    width: 80px;
+    cursor: pointer;
+}
+
+ /*contact us page */
+
+.contact {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: #333;
+    text-align: center;
+}
+
+.contact h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #d35400;
+    margin-bottom: 20px;
+}
+
+.contact h2 {
+    font-size: 1.8em;
+    color: #c0392b;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact ul li {
+    margin-bottom: 10px;
+}
+
+.contact ul li a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.contact ul li a:hover {
+    color: #d35400;
+    text-decoration: underline;
+}
+/*footer */
+
+/* Footer.css */
+/* Footer.css */
+
+.footer {
+    background-color: #333; /* Dark footer for contrast */
+    color: white;
+    padding: 20px 0; /* Reduced padding for a smaller footer */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 0.9em; /* Smaller font size for a compact footer */
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-logo h2 {
+    font-size: 1.8em; /* Slightly smaller logo text */
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #f4a261; /* Soft orange color */
+  }
+  
+  .footer-logo p {
+    font-size: 1em;
+    color: #ccc; /* Light gray for the subtitle */
+    margin-bottom: 15px;
+  }
+  
+  .footer-links {
+    margin-bottom: 15px;
+  }
+  
+  .footer-links a {
+    color: #f4a261; /* Soft orange color for links */
+    text-decoration: none;
+    font-size: 1em;
+    margin: 0 12px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #fff; /* White color on hover */
+  }
+  
+  .footer-socials {
+    margin-top: 15px;
+  }
+  
+  .footer-socials a {
+    color: #f4a261; /* Soft orange for icons */
+    font-size: 1.5em; /* Smaller icons */
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-socials a:hover {
+    color: #fff; /* White color on hover */
+  }
+  
+  .footer-bottom {
+    margin-top: 15px;
+    border-top: 1px solid #444; /* Subtle border for separation */
+    padding-top: 10px;
+  }
+  
+  .footer-bottom p {
+    font-size: 0.85em; /* Smaller text for the copyright */
+    margin-top: 5px;
+    color: #aaa; /* Light gray for the copyright text */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-links a {
+      margin: 5px 0;
+    }
+  
+    .footer-socials a {
+      margin: 5px 0;
+    }
+  }
+  
+
