@@ -1,3 +1,8 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .menu {
     display: flex; /* Enable Flexbox */
     align-items: center; /* Align items vertically */
@@ -63,15 +68,9 @@
     background: #fff;
     cursor: pointer;
     color: black;
-    height: 380px; 
+    height: 340px; 
     
 }
-h1{
-
-    text-decoration: none ;
-   
-}
-
 
 
 .card-logo {
@@ -163,7 +162,6 @@ h1{
     text-decoration: underline;
 }
 /*footer */
-
 /* Footer.css */
 /* Footer.css */
 
@@ -257,3 +255,169 @@ h1{
   }
   
 
+.Menu{
+  text-align: center;
+}
+/* Center the container */
+.centerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 20px auto;
+}
+
+/* Accordion header styling */
+.accordionHeader {
+  display: flex;
+  flex-direction: column; /* Stack items inside */
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px 16px;
+  font-weight: bold;
+  font-size: 18px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Header content with title and arrow */
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+/* Arrow styling */
+.arrow {
+  font-size: 16px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Rotate arrow on open */
+.accordionHeader.open .arrow {
+  transform: rotate(180deg);
+}
+
+/* Item list styling */
+.itemListContainer {
+ 
+  padding: 10px 0;
+}
+
+/* Show when accordion is open */
+.accordionHeader.open .itemListContainer {
+  display: block;
+}
+
+/* Container for the item list */
+.itemList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+}
+
+/* Each item card */
+.itemCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+
+.itemCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Left side: item details */
+.itemDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Item title and veg/non-veg icon */
+.itemTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Item price */
+.itemPrice {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+}
+
+
+
+/* Item description */
+.itemDescription {
+  font-size: 14px;
+  color: #666;
+  max-width: 75%;
+  line-height: 1.4;
+  text-align: left;   /* Align text to the left */
+  width: 100%;        /* Ensure full width */
+  display: block;     /* Prevent inline behavior */
+}
+
+
+/* Right side: image & add button */
+.itemImageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* Item image */
+.itemImage {
+  width: 110px;
+  height: 110px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.itemImage:hover {
+  transform: scale(1.05);
+}
+
+/* ADD button */
+.addButton {
+  background: #ff4500;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 6px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  font-size: 14px;
+}
+
+.addButton:hover {
+  background: #e63e00;
+  transform: scale(1.05);
+}

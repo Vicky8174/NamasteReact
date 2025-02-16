@@ -13,17 +13,17 @@ export const Header = () => {
             />
         </div>
         <ul className="menu-list">
-            <li>
+            <li >
                 <Link to="/">Home</Link>
             </li>
             
-            <li>
+            <li >
                 <Link to="/About">About us</Link>
             </li>
             <li>
                 <Link to="/Contact">Contact us</Link>
             </li>
-            <li>Cart</li>
+            <li >Cart</li>
 
             
             <button className="login-btn" onClick={() => {
