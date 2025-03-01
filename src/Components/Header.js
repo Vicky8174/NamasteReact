@@ -1,8 +1,12 @@
 import { useState } from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import appStore from "../utils/appStore";
 
 export const Header = () => {
     const [btnName,setBtnName] = useState("Login");
+    const cartItems = useSelector((store)=> store.cart.items);
+    
     return(
     <div className="menu">
         <div className="logo">
@@ -23,7 +27,10 @@ export const Header = () => {
             <li>
                 <Link to="/Contact">Contact us</Link>
             </li>
-            <li >Cart</li>
+            <li >
+                <Link to="/Cart">Cart({cartItems.length})</Link>
+            </li>
+            
 
             
             <button className="login-btn" onClick={() => {

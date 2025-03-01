@@ -290,17 +290,6 @@ a {
   padding: 10px 0;
 }
 
-/* Arrow styling */
-.arrow {
-  font-size: 16px;
-  transition: transform 0.3s ease-in-out;
-}
-
-/* Rotate arrow on open */
-.accordionHeader.open .arrow {
-  transform: rotate(180deg);
-}
-
 /* Item list styling */
 .itemListContainer {
  
@@ -421,3 +410,112 @@ a {
   background: #e63e00;
   transform: scale(1.05);
 }
+/* Cart container */
+.cart-container {
+  width: 80%;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Cart title */
+.cart-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Clear Cart Button */
+.clear-cart-button {
+  display: block;
+  margin: 10px auto 25px;
+  padding: 12px 20px;
+  background-color: #ff3b3b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.clear-cart-button:hover {
+  background-color: #cc0000;
+  transform: scale(1.05);
+}
+
+/* Empty cart message */
+.empty-cart-message {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #777;
+  margin-top: 20px;
+}
+
+/* Cart items list */
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Item card */
+.itemCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.itemCard:hover {
+  transform: translateY(-5px);
+}
+
+/* Item details */
+.itemDetails {
+  flex-grow: 1;
+}
+
+.itemName {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.itemPrice {
+  font-size: 1rem;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.itemDescription {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* Add button */
+.addButton {
+  padding: 8px 14px;
+  background-color:  #e63e00;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+
